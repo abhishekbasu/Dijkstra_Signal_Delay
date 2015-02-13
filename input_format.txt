@@ -1,0 +1,29 @@
+Inputs should be supplied in a csv file, with integer/ float values;
+Input file should not contain any headers/text.
+Then kindly apply the macro as given in the appendix of the report, or otherwise
+attached in multiply_macro.txt. 
+
+The column name(alphabet), import index number and the column description are given below:
+
+A	0	arc_no
+B	1	tc_tail_node
+C	2	tc_head_node
+D	3	tail_node
+E	4	head_node
+F	5	length
+G	6	freeflow time
+H	7	capacity vph
+I	8	free flow speed
+J	9	alpha
+K	10	beta
+L	11	num_lanes
+M	12	opp_arc_no_ifpresent
+N	13	is_signal_link
+O	14	rsquaredby2c
+P	15	sig_capacity
+Q	16	sig_a
+R	17	sig_b
+S	18	is_usignal_link
+T	19	d2
+U	20	usig_capacity
+V	21	Flow

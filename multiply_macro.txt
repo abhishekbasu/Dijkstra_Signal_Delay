@@ -1,0 +1,18 @@
+Sub MultiplierMacro()
+'
+' MultiplierMacro Macro
+' Multiplies all the cell contents by 10,000 and saves it into another sheet.
+'
+' Keyboard Shortcut: Ctrl+Shift+T
+'
+    Sheets("Sheet2").Select
+    ActiveCell.FormulaR1C1 = "=Sheet1!RC*10000"
+    Range("A1").Select
+    Selection.AutoFill Destination:=Range("A1:V1"), Type:=xlFillDefault
+    Range("A1:V1").Select
+    Selection.AutoFill Destination:=Range("A1:V5000"), Type:=xlFillDefault
+    Range("A1:V5000").Select
+    Selection.Copy
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+        :=False, Transpose:=False
+End Sub
